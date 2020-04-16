@@ -1,0 +1,4 @@
+ifconfig eth0 up
+/etc/init.d/networking start
+ip addr add 10.19.0.1/16 dev eth0
+

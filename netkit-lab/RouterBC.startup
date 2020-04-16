@@ -1,0 +1,7 @@
+ifconfig eth0 up
+ifconfig eth1 up
+/etc/init.d/networking start
+sysctl -w net.ipv6.conf.all.forwarding=1
+ip addr add 172.16.19.3/24 dev eth0
+ip addr add 192.168.19.4/24 dev eth1
+

@@ -1,0 +1,18 @@
+ifconfig eth0 up
+ifconfig eth1 up
+/etc/init.d/networking start
+ip addr add 10.19.0.3/16 dev eth0
+ip addr add 192.168.19.3/24 dev eth1
+
+
+
+
+
+
+
+
+
+
+
+
+
