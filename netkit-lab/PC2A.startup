@@ -1,4 +1,5 @@
 ifconfig eth0 up
 /etc/init.d/networking start
 ip addr add 10.19.0.2/16 dev eth0
+route add default gw 10.19.0.3
 

@@ -1,4 +1,10 @@
 ifconfig eth0 up
+ifconfig eth1 up
 /etc/init.d/networking start
 ip addr add 10.19.0.1/16 dev eth0
-
+ip addr add 192.168.200.2/24 dev eth1
+route add -net 192.168.200.0 netmask 255.255.255.0 gw 192.168.200.3 
+route add -net 172.16.19.0 netmask 255.255.255.0 gw 10.19.0.3
+route add -net 10.19.0.0 netmask 255.255.255.0 gw 10.19.0.3
+route add -net 192.168.19.0 netmask 255.255.255.0 gw 10.19.0.3
+route add default gw 192.168.200.1

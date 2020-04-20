@@ -1,4 +1,4 @@
 ifconfig eth0 up
 /etc/init.d/networking start
 ip addr add 172.16.19.2/24 dev eth0
-
+route add default gw 172.16.19.3
